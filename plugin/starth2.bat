@@ -1,0 +1,1 @@
+java -cp C:\source\uberconf\Gradle\gradle-workshop\plugin\build\classes\main;C:\source\uberconf\Gradle\gradle-workshop\plugin\build\resources\main;C:\Users\itsxj01\.gradle\caches\artifacts-24\filestore\com.h2database\h2\1.3.172\jar\911584bdd0a319fa9aa24bed33af0fecff9727f5\h2-1.3.172.jar org.h2.tools.Server

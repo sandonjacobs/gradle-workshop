@@ -3,7 +3,7 @@ package com.nofluff.poetry;
 import java.io.*;
 import java.util.List;
 import java.util.ArrayList;
-//import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.codec.binary.Base64;
 
 public class PoetryEmitter {
    
@@ -85,15 +85,15 @@ public class PoetryEmitter {
    
    public void emit(List<String> lines) {
       for(String line: lines) {
-         System.out.println(line);
-         //System.out.println(encode(line));
+ //        System.out.println(line);
+         System.out.println(encode(line));
       }
    }
    
    public String encode(String line) {
-      //Base64 codec = new Base64();
-      //return new String(codec.encode(line.getBytes()));
-      return line;
+      Base64 codec = new Base64();
+      return new String(codec.encode(line.getBytes()));
+      //return line;
    }
    
    public static void main(String[] args) {

@@ -1,0 +1,20 @@
+task hello
+task world 
+
+hello {
+	description = "Says Hello..."
+	group = "UberConf"
+	doLast {
+		print "Hello, "
+	}	
+}
+
+world {
+	description = "... to the world"
+	group = "UberConf"
+	doLast {
+		println "world"
+	}	
+	
+	dependsOn << hello
+}
